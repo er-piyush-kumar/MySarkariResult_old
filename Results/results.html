@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | mySarkariResult.in</title>
+    <link rel="stylesheet" href="https://mysarkariresult.in/styles.css">
+    
+    <meta name="description" content="mySarkariResult.in offers the latest Sarkari Result 2025 updates, Sarkari Jobs, Online Forms, and Naukri alerts. Explore job opportunities in Railway, Bank, SSC, Navy, Police, UPPSC, UPTET & more.">
+    <meta name="keywords" content="mySarkariResult, Sarkari Result, Sarkari Results, Sarkari Result 2025, Latest Sarkari Result, Sarkari Naukri, Sarkari Exams, Sarkari Results 2025, Government Jobs, SarkariResult Updates, mySarkariResult.in, SarkariResult.com, Railway Jobs, Bank Jobs, SSC Exams, Navy Jobs, Police Jobs, UPPSC, UPSSSC, UPTET, UP Scholarship">
+    <meta name="rating" content="general">
+    <meta http-equiv="content-language" content="en">
+    <meta name="distribution" content="global">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://mysarkariresult.in/Results/results.html">
+    <script src="https://mysarkariresult.in/script.js" defer></script>
+
+    <!-- Social / SEO -->
+    <meta property="og:title" content="Results - mySarkariResult.in">
+    <meta property="og:description" content="Browse the latest Sarkari Results dynamically fetched from result.json.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mysarkariresult.in/Images/logo.png">
+    <meta property="og:url" content="https://mysarkariresult.in/Results/results.html">
+</head>
+<body>
+
+    <!-- Header (Fetched via script.js) -->
+    <div id="header-container"></div>
+
+    <!-- Container for Results -->
+    <div class="results-container"></div>
+
+    <!-- Footer Section -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Fetch and Display Results
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('./result.json') // Path to your result.json file
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const resultsContainer = document.querySelector('.results-container');
+                    if (!resultsContainer) {
+                        console.error('Error: .results-container not found');
+                        return;
+                    }
+
+                    // Clear existing content
+                    resultsContainer.innerHTML = '';
+
+                    // Create a heading for the Results section
+                    const heading = document.createElement('h1');
+                    heading.textContent = 'Latest Results';
+                    heading.style.textAlign = 'center';
+                    heading.style.color = '#ab183d';
+                    heading.style.marginTop = '20px';
+                    resultsContainer.appendChild(heading);
+
+                    // Populate the section with data
+                    data.forEach(item => {
+                        const resultCard = document.createElement('div');
+                        resultCard.className = 'result-card';
+
+                        // Create a link for the result
+                        const link = document.createElement('a');
+                        link.href = item.link;
+                        link.textContent = item.title;
+                        link.target = '_blank'; // Open link in a new tab
+                        link.style.textDecoration = 'none';
+                        link.style.color = '#333';
+                        link.style.fontSize = '1.2rem';
+                        link.style.display = 'block';
+                        link.style.padding = '10px';
+                        link.style.borderBottom = '1px solid #ddd';
+                        link.style.transition = 'background-color 0.2s';
+
+                        // Add hover effect
+                        link.addEventListener('mouseover', () => {
+                            link.style.backgroundColor = '#f8f8f8';
+                        });
+                        link.addEventListener('mouseout', () => {
+                            link.style.backgroundColor = 'transparent';
+                        });
+
+                        // Append the link to the result card
+                        resultCard.appendChild(link);
+
+                        // Append the result card to the container
+                        resultsContainer.appendChild(resultCard);
+                    });
+                })
+                .catch(error => console.error('Error fetching results:', error));
+        });
+    </script>
+</body>
+</html>

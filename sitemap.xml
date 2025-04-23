@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://mysarkariresult.in</loc>
-        <lastmod>2024-03-06</lastmod>
+        <lastmod>2025-04-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +15,7 @@
     <!-- Vacancy -->
     <url>
         <loc>https://mysarkariresult.in/Jobs/job-vacancies.html</loc>
-        <lastmod>2024-03-06</lastmod>
+        <lastmod>2025-04-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- Contact Page -->
     <url>
         <loc>https://mysarkariresult.in/Contact_Us/contact.html</loc>
-        <lastmod>2024-03-06</lastmod>
+        <lastmod>2025-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -31,72 +31,66 @@
     <!-- Privacy Policy -->
     <url>
         <loc>https://mysarkariresult.in/Privacy_Policy/privacy-policy.html</loc>
-        <lastmod>2024-03-06</lastmod>
+        <lastmod>2025-04-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-
     <!-- Job Post -->
     <url>
         <loc>https://mysarkariresult.in/Jobs/Railway-Apprentices-Recruitment-2025.html</loc>
-        <lastmod>2024-03-09</lastmod>
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Jobs/MPESB-Excise-Constable-Online-Form-2025.html</loc>
-        <lastmod>2024-03-06</lastmod>
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Jobs/Army-Agniveer-CEE-Online-Form-2025.html</loc>
-        <lastmod>2024-03-12</lastmod>
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    
 
     <!-- Leetcode Post -->
     <url>
         <loc>https://mysarkariresult.in/Leetcode/leetcode.html</loc>
-        <lastmod>2024-03-06</lastmod> <!-- Update this date to today's date -->
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Leetcode/2965-find-missing-and-repeated-values.html</loc>
-        <lastmod>2024-03-06</lastmod> <!-- Update this date to today's date -->
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Leetcode/3446-sort-matrix-by-diagonals.html</loc>
-        <lastmod>2024-03-06</lastmod> <!-- Update this date to today's date -->
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Leetcode/2379-minimum-recolors-to-get-k-consecutive-black-blocks.html</loc>
-        <lastmod>2024-03-09</lastmod> <!-- Update this date to today's date -->
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mysarkariresult.in/Leetcode/2529-maximum-count-of-positive-and-negative-integers.html</loc>
-        <lastmod>2024-03-12</lastmod> <!-- Update this date to today's date -->
+        <lastmod>2025-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    
-
-
 </urlset>
